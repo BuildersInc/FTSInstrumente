@@ -1,5 +1,5 @@
 # FTSInstrumente
-Music Instruments for www.ftscraft.de
+Music Instruments for https://ftscraft.de/
 
 ## Recipies
 
