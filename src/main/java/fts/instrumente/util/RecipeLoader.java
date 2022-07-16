@@ -1,0 +1,170 @@
+package fts.instrumente.util;
+
+import fts.instrumente.main.Main;
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.Recipe;
+import org.bukkit.inventory.ShapedRecipe;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.plugin.Plugin;
+
+public class RecipeLoader {
+    public void registerRecipes() {
+        ItemStack Klavier = new ItemStack(Material.MUSIC_DISC_STAL);
+        ItemMeta KlavierM = Klavier.getItemMeta();
+        KlavierM.setDisplayName("§aKlavier");
+        KlavierM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Klavier.setItemMeta(KlavierM);
+        NamespacedKey KlavierNKey = new NamespacedKey((Plugin)Main.getPlugin(), "KlavierNKey");
+        ShapedRecipe KlavierR = new ShapedRecipe(KlavierNKey, Klavier);
+        KlavierR.shape(new String[] { "AQA", "AJA", "AWA" });
+        KlavierR.setIngredient('W', Material.OAK_PLANKS);
+        KlavierR.setIngredient('Q', Material.QUARTZ);
+        KlavierR.setIngredient('J', Material.JUKEBOX);
+        KlavierR.setIngredient('A', Material.AIR);
+
+        ItemStack Schlagzeug = new ItemStack(Material.BARREL);
+        ItemMeta SchlagZM = Schlagzeug.getItemMeta();
+        SchlagZM.setDisplayName("§aSchlagzeug");
+        SchlagZM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Schlagzeug.setItemMeta(SchlagZM);
+        NamespacedKey SchlagZKey = new NamespacedKey((Plugin)Main.getPlugin(), "SchlagzeugKey");
+        ShapedRecipe SchlagZR = new ShapedRecipe(SchlagZKey, Schlagzeug);
+        SchlagZR.shape(new String[] { "SAS", "ABA", "AOA" });
+        SchlagZR.setIngredient('S', Material.STICK);
+        SchlagZR.setIngredient('A', Material.AIR);
+        SchlagZR.setIngredient('O', Material.OAK_PLANKS);
+        SchlagZR.setIngredient('B', Material.JUKEBOX);
+
+        ItemStack Glockenspiel = new ItemStack(Material.MUSIC_DISC_13);
+        ItemMeta GSpielM = Glockenspiel.getItemMeta();
+        GSpielM.setDisplayName("§aGlockenspiel");
+        GSpielM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Glockenspiel.setItemMeta(GSpielM);
+        NamespacedKey GSpielKey = new NamespacedKey((Plugin)Main.getPlugin(), "GlockenspielKey");
+        ShapedRecipe GSpielR = new ShapedRecipe(GSpielKey, Glockenspiel);
+        GSpielR.shape(new String[] { "AAA", "OSO", "GGG" });
+        GSpielR.setIngredient('A', Material.AIR);
+        GSpielR.setIngredient('G', Material.GOLD_NUGGET);
+        GSpielR.setIngredient('S', Material.JUKEBOX);
+        GSpielR.setIngredient('O', Material.OAK_PLANKS);
+
+        ItemStack Fl = new ItemStack(Material.STICK);
+        ItemMeta FltM = Fl.getItemMeta();
+        FltM.setDisplayName("§aFlöte");
+        FltM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Fl.setItemMeta(FltM);
+        NamespacedKey FltKey = new NamespacedKey((Plugin)Main.getPlugin(), "FloeteKey");
+        ShapedRecipe FltR = new ShapedRecipe(FltKey, Fl);
+        FltR.shape(new String[] { "ACA", "AJA", "ASA" });
+        FltR.setIngredient('A', Material.AIR);
+        FltR.setIngredient('J', Material.JUKEBOX);
+        FltR.setIngredient('S', Material.STICK);
+        FltR.setIngredient('C', Material.CLAY_BALL);
+
+        ItemStack Chimes = new ItemStack(Material.IRON_BARS);
+        ItemMeta ChimM = Chimes.getItemMeta();
+        ChimM.setDisplayName("§aChimes");
+        ChimM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Chimes.setItemMeta(ChimM);
+        NamespacedKey ChimesKey = new NamespacedKey((Plugin)Main.getPlugin(), "ChimesKey");
+        ShapedRecipe ChimR = new ShapedRecipe(ChimesKey, Chimes);
+        ChimR.shape(new String[] { "AAA", "IJI", "GGG" });
+        ChimR.setIngredient('J', Material.JUKEBOX);
+        ChimR.setIngredient('I', Material.IRON_NUGGET);
+        ChimR.setIngredient('G', Material.GLASS);
+        ChimR.setIngredient('A', Material.AIR);
+
+        ItemStack Kuhglocke = new ItemStack(Material.BELL);
+        ItemMeta KuhGM = Kuhglocke.getItemMeta();
+        KuhGM.setDisplayName("§aKuhglocke");
+        KuhGM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Kuhglocke.setItemMeta(KuhGM);
+        NamespacedKey KuhGKey = new NamespacedKey((Plugin)Main.getPlugin(), "KuhglockeKey");
+        ShapedRecipe KuhGR = new ShapedRecipe(KuhGKey, Kuhglocke);
+        KuhGR.shape(new String[] { "ASA", "AJA", "AGA" });
+        KuhGR.setIngredient('J', Material.JUKEBOX);
+        KuhGR.setIngredient('S', Material.STICK);
+        KuhGR.setIngredient('G', Material.GOLD_INGOT);
+        KuhGR.setIngredient('A', Material.AIR);
+
+        ItemStack XyloPB = new ItemStack(Material.RAIL);
+        ItemMeta XyloM = XyloPB.getItemMeta();
+        XyloM.setDisplayName("§aKnochen Xylophon");
+        XyloM.addEnchant(Enchantment.DURABILITY, 10, true);
+        XyloPB.setItemMeta(XyloM);
+        NamespacedKey XyloPBKey = new NamespacedKey((Plugin)Main.getPlugin(), "XylophonKey");
+        ShapedRecipe XyloPBR = new ShapedRecipe(XyloPBKey, XyloPB);
+        XyloPBR.shape(new String[] { "ABA", "AJA", "AOA" });
+        XyloPBR.setIngredient('A', Material.AIR);
+        XyloPBR.setIngredient('B', Material.BONE);
+        XyloPBR.setIngredient('O', Material.OAK_PLANKS);
+        XyloPBR.setIngredient('J', Material.JUKEBOX);
+
+        ItemStack XyloPI = new ItemStack(Material.ACTIVATOR_RAIL);
+        ItemMeta XyloPIM = XyloPI.getItemMeta();
+        XyloPIM.setDisplayName("§aEisen Xylophon");
+        XyloPIM.addEnchant(Enchantment.DURABILITY, 10, true);
+        XyloPI.setItemMeta(XyloPIM);
+        NamespacedKey XyloPIKey = new NamespacedKey((Plugin)Main.getPlugin(), "EisenXylophoneKey");
+        ShapedRecipe XyloPIR = new ShapedRecipe(XyloPIKey, XyloPI);
+        XyloPIR.shape(new String[] { "AIA", "AJA", "AOA" });
+        XyloPIR.setIngredient('A', Material.AIR);
+        XyloPIR.setIngredient('I', Material.IRON_NUGGET);
+        XyloPIR.setIngredient('O', Material.OAK_PLANKS);
+        XyloPIR.setIngredient('J', Material.JUKEBOX);
+
+        ItemStack Gitr = new ItemStack(Material.WOODEN_SHOVEL);
+        ItemMeta GitrM = Gitr.getItemMeta();
+        GitrM.setDisplayName("§aGitarre");
+        GitrM.addEnchant(Enchantment.DURABILITY, 10, true);
+        Gitr.setItemMeta(GitrM);
+        NamespacedKey GitrKey = new NamespacedKey((Plugin)Main.getPlugin(), "GitarreKey");
+        ShapedRecipe GitrR = new ShapedRecipe(GitrKey, Gitr);
+        GitrR.shape(new String[] { "ASA", "TJT", "AOA" });
+        GitrR.setIngredient('A', Material.AIR);
+        GitrR.setIngredient('S', Material.STICK);
+        GitrR.setIngredient('O', Material.OAK_PLANKS);
+        GitrR.setIngredient('T', Material.STRING);
+        GitrR.setIngredient('J', Material.JUKEBOX);
+
+        ItemStack BassG = new ItemStack(Material.STONE_SHOVEL);
+        ItemMeta BassGM = BassG.getItemMeta();
+        BassGM.setDisplayName("§aBass");
+        BassGM.addEnchant(Enchantment.DURABILITY, 10, true);
+        BassG.setItemMeta(BassGM);
+        NamespacedKey BassKey = new NamespacedKey((Plugin)Main.getPlugin(), "BassGitarrenKey");
+        ShapedRecipe BassGR = new ShapedRecipe(BassKey, BassG);
+        BassGR.shape(new String[] { "ATA", "SJS", "AIA" });
+        BassGR.setIngredient('A', Material.AIR);
+        BassGR.setIngredient('I', Material.IRON_INGOT);
+        BassGR.setIngredient('J', Material.JUKEBOX);
+        BassGR.setIngredient('S', Material.STRING);
+        BassGR.setIngredient('T', Material.STICK);
+
+        ItemStack WeihrauchLaterne = new ItemStack(Material.TORCH);
+        ItemMeta WeihRMeta = WeihrauchLaterne.getItemMeta();
+        WeihRMeta.setDisplayName("§aWeihrauch Laterne");
+        WeihRMeta.addEnchant(Enchantment.DURABILITY, 10, true);
+        WeihrauchLaterne.setItemMeta(WeihRMeta);
+        NamespacedKey WeihRKey = new NamespacedKey((Plugin)Main.getPlugin(), "WeihrauchLaterneKey");
+        ShapedRecipe WeihRRecipe = new ShapedRecipe(WeihRKey, WeihrauchLaterne);
+        WeihRRecipe.shape(new String[] { "DDD", "DLD", "DDD" });
+        WeihRRecipe.setIngredient('D', Material.DEAD_BUSH);
+        WeihRRecipe.setIngredient('L', Material.TORCH);
+        Bukkit.addRecipe((Recipe)WeihRRecipe);
+        Bukkit.addRecipe((Recipe)KlavierR);
+        Bukkit.addRecipe((Recipe)SchlagZR);
+        Bukkit.addRecipe((Recipe)GSpielR);
+        Bukkit.addRecipe((Recipe)FltR);
+        Bukkit.addRecipe((Recipe)ChimR);
+        Bukkit.addRecipe((Recipe)KuhGR);
+        Bukkit.addRecipe((Recipe)XyloPBR);
+        Bukkit.addRecipe((Recipe)XyloPIR);
+        Bukkit.addRecipe((Recipe)GitrR);
+        Bukkit.addRecipe((Recipe)BassGR);
+    }
+}

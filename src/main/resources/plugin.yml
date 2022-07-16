@@ -1,0 +1,4 @@
+name: Instrumente
+version: '${project.version}'
+main: fts.instrumente.main.Main
+api-version: 1.18
