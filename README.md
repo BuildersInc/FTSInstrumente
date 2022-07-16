@@ -3,31 +3,31 @@ Music Instruments for https://ftscraft.de/
 
 ## Recipies
 ### Piano
-<img src="./.git/images/piano.png">
+<img src="./.github/images/piano.png">
 
 ### Drums
-<img src="./.git/images/drums.png">
+<img src="./.github/images/drums.png">
 
 ### Glockenspiel
-<img src="./.git/images/glockenspiel.png">
+<img src="./.github/images/glockenspiel.png">
 
 ### Bass
-<img src="./.git/images/bass.png">
+<img src="./.github/images/bass.png">
 
 ### Chimes
-<img src="./.git/images/chimes.png">
+<img src="./.github/images/chimes.png">
 
 ### Xylophone
-<img src="./.git/images/xylophone.png">
+<img src="./.github/images/xylophone.png">
 
 ### Guitar
-<img src="./.git/images/guitar.png">
+<img src="./.github/images/guitar.png">
 
 ### Flute
-<img src="./.git/images/flute.png">
+<img src="./.github/images/flute.png">
 
 ### Bell
-<img src="./.git/images/bell.png">
+<img src="./.github/images/bell.png">
 
 
 ## Note
