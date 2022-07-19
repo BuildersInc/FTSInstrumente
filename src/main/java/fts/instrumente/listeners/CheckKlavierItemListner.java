@@ -34,8 +34,10 @@ public class CheckKlavierItemListner implements Listener {
         Player player = event.getPlayer();
         if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             ItemStack item = player.getInventory().getItemInMainHand();
-            if(musicItems.contains(item.getItemMeta().getDisplayName())) {
-                event.setCancelled(true);
+            if(item.hasItemMeta()) {
+                if (musicItems.contains(item.getItemMeta().getDisplayName())) {
+                    event.setCancelled(true);
+                }
             }
         }
         if (event.getAction() == Action.RIGHT_CLICK_AIR) {
